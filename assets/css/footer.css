@@ -1,0 +1,82 @@
+.copyright-wrapper .copyright-menu-list ul li{
+    position: relative;
+    margin-left: 11px !important;
+    margin-right: 13px !important;
+}
+.copyright-wrapper .copyright-menu-list ul li:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    right: -14px;
+    width: 1px;
+    background: #ffffff;
+    height: calc(100% - 0px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.em-text-color em{
+    color: #89725F
+}
+.footer-mail-list ul.elementor-icon-list-items li.elementor-icon-list-item:nth-child(2) a{
+    font-weight: 500
+}
+@media screen and (max-width: 767px) {
+    .footer-column {
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100% !important
+    }
+
+    .footer-column .elementor-widget-wrap {
+        padding: 0 !important;
+        word-break: break-word;
+    }
+
+    .copyright-menu-list {
+        max-width: 360px;
+    }
+
+    .copyright-wrapper .copyright-menu-list ul li {
+        margin-bottom: 12px;
+    }
+
+    .footer-upper-section .footer-social-icons .elementor-social-icons-wrapper,
+    .footer-logo .elementor-widget-container,
+     .footer-upper-section,
+     .footer-upper-section p,
+    .footer-upper-section ul li span,
+    .footer-upper-section ul li a {
+        text-align: center;
+        justify-content: center !important;
+    }
+
+    .footer-copyright{
+        max-width: 307px;
+        margin: 0 auto;
+    }
+    .copyright-wrapper .copyright-menu-list ul li:first-child{
+        margin-left: 0 !important;
+    }
+    .copyright-wrapper .copyright-menu-list ul li:not(:last-child)::before{
+        height: calc(100% - 4px);
+    }
+
+    .footer-logo .elementor-widget-container{
+        margin-bottom: 28px !important
+    }
+    .footer-social-icons .elementor-widget-container{
+        padding: 0 !important
+    }
+    
+    .footer-mail-list .elementor-widget-container{
+        margin-bottom: 33px !important
+    }
+    .copyright-menu-list .elementor-widget-container{
+        margin-bottom: -2px !important;
+    }
+}
+
