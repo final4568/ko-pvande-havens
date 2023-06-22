@@ -104,83 +104,46 @@
 	});
 
 	$(document).ready(function() {
-		//   $('.main-menu ul.menu > li').addClass('activemenu');
-		// $('.burger-btn').on('click', function() {
-		//   $('.herader-mobile-wrapper').slideToggle();
-		//   $('body').toggleClass('overflowbody mobile-menu-open');
-		// });
-
-		// var target = $('.main-menu ul.menu > li');
-		// $('.main-menu ul.menu > li').addClass('main-menu-item');
-		// target.each(function(){
-		// 	if($(this).has('.sub-menu').length > 0){
-		// 		var $newdiv1 = $( "<div class='menu-arrow'></div>" );
-		// 		$(this).prepend($newdiv1)
-		// 	}
-		// })
-		
-		// $('.menu-arrow').on('click', function() {
-      	// 	$(this).siblings(".sub-menu").slideToggle().closest('.main-menu-item').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
-		//  	$('body').toggleClass('open-submenu');
-		// });  
-		  
+		 /*Mobile Header*/
+	$('.menu-open-btn').on('click', function () {
+		$('.mobile-header-wrapper').slideToggle();
+		$('body').toggleClass('overflowbody mobile-menu-open');
+		// $('.header-wrapper .header-menu-wrapper .header-menu-colum').addClass('activemenu');
 	});
 
 
-	// $(window).on("load", function() {
-	// 	var mainWrapperss = document.querySelectorAll(".single-latest-post .elementor-post");
-	// 	mainWrapperss.forEach(function(mainWrappers) {
-	// 		var newLink = mainWrappers.querySelector(".elementor-post__thumbnail__link");
-	// 		if (!newLink) {
-	// 			var newDiv = document.createElement("div");
-	// 			newDiv.classList.add("thumbnail_div");
-	// 			mainWrappers.prepend(newDiv);
-	// 	}
-	// 	});
-	// });
 
-	// $(window).on("scroll load", function() {
-	// 	if($(window).scrollTop() > 0) {
-	// 		$("body").addClass("active-header");
-	// 	} else {
-	// 	   $("body").removeClass("active-header");
-	// 	}
-	// });
+	var $opensubmenu = $("<div class='open-submenu-arrow'></div>");
+	$('.mobile-menu ul.menu > li.menu-item-has-children').prepend($opensubmenu);
+
+	var $openchild_submenu = $("<div class='open-chilssubmenu-arrow'></div>");
+	$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').prepend($openchild_submenu);
+
+
+
+	$('.open-submenu-arrow').on('click', function () {
+		$(this).siblings(".sub-menu").slideToggle().closest('li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp();
+		$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').removeClass('is-active')
+	});
+
+	$('.open-chilssubmenu-arrow').on('click', function () {
+		$(this).siblings(".sub-menu").slideToggle().closest('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
+	});
+
+	$('.main-menu-nav').doubleTapToGo();
+
+	$(".elementor-accordion-item").on("click", function (x) {
+		if (window.matchMedia("(max-width: 767px)").matches) {
+			const item = $(this);
+			setTimeout(function () {
+				const position = item.offset().top;
+				$("body, html").animate({ scrollTop: position - adminbar - $("[data-elementor-type='header']").height() - 10 });
+			}, 500);
+		}
+	});
+		  
+	});
 	
-	// $(".elementor-accordion-item").on("click", function(x){
-	// 	if (window.matchMedia("(max-width: 900px)").matches) {
-	// 		const item = $(this);
-	// 		setTimeout(function () { 
-	// 		const position = item.offset().top;
-	// 		$("body, html").animate({ scrollTop: position - adminbar - $("[data-elementor-type='header']").height() - 10});
-	// 	 }, 500);
-	// 	} 
-	// });
-
-	
-	// $(document).on('facetwp-refresh', function() {
-	// 	if (FWP.soft_refresh == true) {
-	// 		FWP.enable_scroll = true;
-	// 	} else {
-	// 		FWP.enable_scroll = false;
-	// 	}
-	// });
-	
-    // $(document).on('facetwp-loaded', function() {
-	// 	if (FWP.enable_scroll == true) {
-	// 		var topbar = 0;
-	// 		if($('html #wpadminbar').length>0){
-	// 			topbar = $('html #wpadminbar').height();
-	// 		}
-	// 		$('html,body').animate({
-	// 			scrollTop: $('.facetwp-scroll-top').offset().top - $('.elementor-location-header').height() - topbar
-	// 		});
-	// 	}
-	// });
-
-
-
-
 	
 
 }(jQuery))
