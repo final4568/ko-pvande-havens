@@ -104,46 +104,62 @@
 	});
 
 	$(document).ready(function() {
-		 /*Mobile Header*/
+	/*Mobile Header*/
 	$('.menu-open-btn').on('click', function () {
 		$('.mobile-header-wrapper').slideToggle();
 		$('body').toggleClass('overflowbody mobile-menu-open');
 		// $('.header-wrapper .header-menu-wrapper .header-menu-colum').addClass('activemenu');
 	});
-
-
-
 	var $opensubmenu = $("<div class='open-submenu-arrow'></div>");
-	$('.mobile-menu ul.menu > li.menu-item-has-children').prepend($opensubmenu);
+		$('.mobile-menu ul.menu > li.menu-item-has-children').prepend($opensubmenu);
 
-	var $openchild_submenu = $("<div class='open-chilssubmenu-arrow'></div>");
-	$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').prepend($openchild_submenu);
+		var $openchild_submenu = $("<div class='open-chilssubmenu-arrow'></div>");
+		$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').prepend($openchild_submenu);
 
 
 
-	$('.open-submenu-arrow').on('click', function () {
-		$(this).siblings(".sub-menu").slideToggle().closest('li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp();
-		$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').removeClass('is-active')
-	});
+		$('.open-submenu-arrow').on('click', function () {
+			$(this).siblings(".sub-menu").slideToggle().closest('li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp();
+			$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').removeClass('is-active')
+		});
 
-	$('.open-chilssubmenu-arrow').on('click', function () {
-		$(this).siblings(".sub-menu").slideToggle().closest('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
-	});
+		$('.open-chilssubmenu-arrow').on('click', function () {
+			$(this).siblings(".sub-menu").slideToggle().closest('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
+		});
 
-	$('.main-menu-nav').doubleTapToGo();
-
-	$(".elementor-accordion-item").on("click", function (x) {
-		if (window.matchMedia("(max-width: 767px)").matches) {
-			const item = $(this);
-			setTimeout(function () {
-				const position = item.offset().top;
-				$("body, html").animate({ scrollTop: position - adminbar - $("[data-elementor-type='header']").height() - 10 });
-			}, 500);
-		}
-	});
 		  
 	});
+	$(window).on("scroll load", function () {
+		if ($(window).scrollTop() > 50) {
+			$("body").addClass("active-header");
+		} else {
+			$("body").removeClass("active-header");
+		}
+
+		/**/
+		var checknot_found_class = $('.post-single-left');
+		if (checknot_found_class.hasClass('job-not-found')) {
+		$('.job-posting-main-erapper').addClass('job-post-empty-content');
+		}
+	});
+
+	var swiper = new Swiper(".hs-slider", {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		loop: true,
+		autoplay: {
+			delay: 2000,
+		  },
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
 	
+		navigation: {
+			nextEl: ".hs-arrow-controll-next",
+			prevEl: ".hs-arrow-controll-prev",
+		},
+	});
 	
 
 }(jQuery))
