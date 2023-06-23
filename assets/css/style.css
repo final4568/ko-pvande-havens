@@ -1786,9 +1786,11 @@ body .site-main ol ul:not([class]) li, body .site-main ol ul:not([class]) li ol 
 
 	.elementor-button:after,
 	[type="button"]:after {
-		width: 211px;
+		width: 100px;
 	}
-
+	.elementor-button{
+		max-width: max-content;
+	}
 	.hero-down-arrow .elementor-icon{
         border: 5px solid #dbe9ee;
     }
