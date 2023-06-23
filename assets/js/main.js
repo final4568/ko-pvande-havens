@@ -147,9 +147,9 @@
 		slidesPerView: 1,
 		spaceBetween: 30,
 		loop: true,
-		autoplay: {
-			delay: 2000,
-		  },
+		// autoplay: {
+		// 	delay: 2000,
+		//   },
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
@@ -161,6 +161,16 @@
 		},
 	});
 	
+	var swiper = new Swiper(".fav-Food-swiper", {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		grabCursor: true,
+		loop: true,
+		pagination: {
+		  el: ".swiper-pagination",
+		  clickable: true,
+		},
+	  });
 
 }(jQuery))
 
