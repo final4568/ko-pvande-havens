@@ -147,11 +147,11 @@
 		slidesPerView: 1,
 		spaceBetween: 30,
 		loop: true,
-		// autoplay: {
-		// 	delay: 2000,
-		//   },
+		autoplay: {
+			delay: 2000,
+		  },
 		pagination: {
-			el: ".swiper-pagination",
+			el: ".hs-main-wrpper  .swiper-pagination",
 			clickable: true,
 		},
 	
@@ -162,14 +162,27 @@
 	});
 	
 	var swiper = new Swiper(".fav-Food-swiper", {
-		slidesPerView: 3,
-		spaceBetween: 30,
+		slidesPerView: 1,
 		grabCursor: true,
+		spaceBetween: 20,
 		loop: true,
+		// autoplay: {
+		// 	delay: 2000,
+		// },
 		pagination: {
-		  el: ".swiper-pagination",
+		  el: ".fav-Food-swiper .swiper-pagination",
 		  clickable: true,
 		},
+		breakpoints: {
+			700: {
+			  slidesPerView: 2,
+			  spaceBetween: 20,
+			},
+			1024: {
+			  slidesPerView: 3,
+			  spaceBetween: 30,
+			},
+		  },
 	  });
 
 }(jQuery))
