@@ -780,7 +780,7 @@ body .gform_wrapper .gfield_time_ampm select {
     line-height: 1;
     width: 15px;
     height: 15px;
-    background: url(../img/form-arrow.svg) no-repeat center center;
+    background: url('../img/mobile-sab-men.svg.svg') no-repeat center center;
     background-size: auto;
     right: 10px;
 }
@@ -1041,6 +1041,7 @@ html body .gform_wrapper div.validation_error html body .gform_wrapper form {
 html body .gform_wrapper form ul.gform_fields li.gfield {
 	margin-top: 0;
 	margin-bottom: 20px !important;
+	padding: 0;
 }
 
 .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
@@ -1607,6 +1608,18 @@ body .site-main ol ul:not([class]) li, body .site-main ol ul:not([class]) li ol 
     
 }
 
+html body .two-column-form-layout .elementor-widget-container .gform-body ul.gform_fields{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    justify-content:space-between;
+}
+html body .two-column-form-layout .elementor-widget-container .gform-body ul.gform_fields>li:not(.wd-100){
+    width: calc(50% - 15px);
+}
+.wd-100{
+    width: 100%
+}
 @media screen and (max-width:1024px){
 
 	body .elementor-widget-heading h1.elementor-heading-title,
@@ -1804,6 +1817,9 @@ body .site-main ol ul:not([class]) li, body .site-main ol ul:not([class]) li ol 
 		line-height: 22px;
 		margin-top: 3px;
 	}
+	html body .two-column-form-layout .elementor-widget-container .gform-body ul.gform_fields>li:not(.wd-100){
+		width: 100%;
+   }
 	/* ---------------------------- code for cookies ---------------------------- */
 	#cookie-notice .cookie-notice-container {
 		padding: 25px 40px;

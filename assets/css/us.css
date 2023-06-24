@@ -136,6 +136,7 @@
 /*fav slider code*/
 .fav-food-main-wrapper .fav-Food-swiper{
     padding: 0 10px 100px;
+    border-radius: 10px 10px 0 0;
 }
 .fav-food-main-wrapper .fav-Food-swiper .swiper-wrapper .swiper-slide{
     height: auto;
@@ -215,6 +216,49 @@
     background-color: #017D12;
 }
 
+/*HOME Gallery*/
+.image-gallery-wrapper .elementor-image-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: calc(100% + 30px) !important;
+    margin: 0 -15px -30px !important;
+}
+.image-gallery-wrapper .elementor-image-gallery .gallery  .gallery-item{
+    max-width: calc(33.33% - 30px) !important;
+    margin: 0 15px 30px !important;
+    transition: 0.3s all;
+}
+.image-gallery-wrapper .elementor-image-gallery .gallery .gallery-item:hover{
+    box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.1)
+}
+.image-gallery-wrapper .elementor-image-gallery .gallery  .gallery-item .gallery-icon a{
+display: block;
+min-height: 240px;
+max-height: 300px;
+height: 55vw;
+position: relative;
+padding-bottom: 70%
+}
+.image-gallery-wrapper .elementor-image-gallery .gallery  .gallery-item .gallery-icon a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute
+}
+
+.galler-tab-nav .elementor-widget-container ul.elementor-icon-list-items{
+    max-width: 400px;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.galler-tab-nav .elementor-widget-container ul.elementor-icon-list-items li{
+    min-width: max-content
+}
+
+.tabs-sect:not(.elementor-element-edit-mode) .hide-tab-heading{
+    display: none !important;
+}
 
 @media screen and (max-width:1024px){
     .hs-main-wrpper .hs-inner-wrapper{
@@ -223,13 +267,21 @@
     
     /*cta code*/
     .delicious-food-wrapper .elementor-widget-wrap{
-        max-width: calc(100% + 20px);
+        width: calc(100% + 20px);
         margin: 0 -10px -30px !important;
     }
     .delicious-food-wrapper .elementor-widget-wrap .delicious-food-card{
-        width: calc(50% - 20px);
-        margin: 0 10px 30px !important;
+        max-width: calc(50% - 20px) !important;
     }
+
+  
+}
+@media screen and (max-width:900px){
+  /*home gallery*/
+  .image-gallery-wrapper .elementor-image-gallery .gallery  .gallery-item{
+    max-width: calc(50% - 30px) !important;
+    margin: 0 15px 30px !important;
+}
 }
 @media screen and (max-width:767px){
     .hs-controlls .hs-arrow-controll-prev,
@@ -245,7 +297,7 @@
     }
     /*fav slider*/
     .fav-food-main-wrapper .fav-Food-swiper{
-        padding:  0 0 60px;
+        padding:  0 5px 60px;
     }
 }
 @media screen and (max-width:580px){
@@ -265,5 +317,15 @@
     .delicious-food-wrapper .elementor-widget-wrap .delicious-food-card{
         width: 100%;
         margin: 0 0 20px !important
+    }
+
+    /*HOME Gallery*/
+    .image-gallery-wrapper .elementor-image-gallery .gallery {
+        max-width: 100%!important;
+        margin: 0 0px -30px !important;
+    }
+    .image-gallery-wrapper .elementor-image-gallery .gallery  .gallery-item{
+        max-width: 100% !important;
+        margin: 0 0 30px !important
     }
 }
