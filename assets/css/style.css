@@ -618,9 +618,9 @@ body .arrow-btn .elementor-button span.last::after {
     width: 16px !important;
     height: 10px;
     display: inline-block;
-    background: url("../img/button-arrow.svg") center center no-repeat;
+    background: url("../img/pagination-arrow.svg") center center no-repeat;
     background-size: contain;
-	margin-bottom: 2px;
+	margin-bottom: 1px;
     margin-left: 7px;
     transition: all 0.3s;
 	position: relative;
@@ -634,16 +634,17 @@ body .arrow-btn .elementor-button span.last::before {
 	width: 16px;
     height: 16px;
     border-radius: 00%;
-    background-color: #011B1051;
+    background-color: #EBE7C4;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s;
 	display: inline-block;
-	right: -4px;
-    top: 50%;
+	right: -1px !important;
+    top: calc(50% - -1px);
     position: absolute;
     transform: translatey(-50%);
 	z-index: 1;
+	border-radius: 50%;
 }
 body .text-link .elementor-button:hover span.last::before,
 body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button:hover span.last::before,
@@ -1489,7 +1490,7 @@ End gravity form style
 ------------------------------------------------------------ */
 
 .coming-soon-content {
-	min-height: calc(100vh - 1098px);
+	min-height: calc(100vh - 1063px);
 }
 /* ---------------------------- code for cookies ---------------------------- */
 #cookie-notice {
@@ -1620,6 +1621,127 @@ html body .two-column-form-layout .elementor-widget-container .gform-body ul.gfo
 .wd-100{
     width: 100%
 }
+
+.facetwp-pager:empty {
+    display: none;
+}
+
+.facetwp-page.dots.start.kovp-hide-page-dk {
+    display: none !important
+}
+
+/*pagination*/
+.page_link.dots {
+    pointer-events: none;
+}
+
+#page_navigation,
+.elementor-pagination,
+.facetwp-pager {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 10px;
+}
+
+#page_navigation {
+    margin-top: 30px;
+}
+
+.facetwp-facet {
+    margin-bottom: 0 !important;
+}
+
+.blog-pagers .facetwp-facet {
+    margin-bottom: 0
+}
+
+#page_navigation .page_link.active_page,
+.page-numbers.current,
+.facetwp-pager .facetwp-page.active {
+    background-color: #1D3323;
+    color: #E4DEAE !important;
+    pointer-events: none;
+}
+
+#page_navigation .previous_link:hover,
+#page_navigation .next_link:hover,
+#page_navigation .page_link:not(.dots):hover,
+.page-numbers:not(.dots):not(.current):hover,
+a.facetwp-page:not(.dots):not(.active):hover,
+.facetwp-pager .facetwp-page.next:hover,
+.facetwp-pager .facetwp-page.prev:hover {
+    background-color: #E4DEAE;
+}
+
+.page-numbers {
+    margin: 0 !important;
+}
+
+#page_navigation .previous_link,
+#page_navigation .next_link,
+#page_navigation .page_link,
+.page-numbers,
+.facetwp-pager .facetwp-page {
+    padding: 3px 5px;
+    border-radius: 0px;
+    font-weight: 700 !important;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px !important;
+    line-height: 28px;
+    color: var(--primary1) !important;
+    background-color: #D8DBDF;
+    min-width: 34px;
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#page_navigation .dots,
+.page-numbers.dots,
+.facetwp-page.dots {
+    padding: 0px 2px 6px 2px !important;
+}
+
+.facetwp-pager .facetwp-page.next,
+.facetwp-pager .facetwp-page.prev {
+    color: transparent !important;
+    position: relative;
+}
+
+#page_navigation .previous_link,
+#page_navigation .next_link,
+.facetwp-pager .facetwp-page.next:after,
+.facetwp-pager .facetwp-page.prev:after {
+    background: url('../img/pagination-arrow.svg') center / 14px no-repeat;
+    background-size: 14px;
+    background-color: inherit;
+}
+
+#page_navigation .previous_link,
+#page_navigation .next_link {
+    background-color: #D8DBDF;
+}
+
+.facetwp-pager .facetwp-page.next:after,
+.facetwp-pager .facetwp-page.prev:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#page_navigation .previous_link,
+.facetwp-pager .facetwp-page.prev {
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width:1024px){
 
 	body .elementor-widget-heading h1.elementor-heading-title,
