@@ -120,8 +120,12 @@ body.admin-bar [data-elementor-type="header"] {
     top: 0;
     z-index: 999;
 }
-
-/*active header*/
+body.home .header-main{
+    background-color: transparent !important
+}
+body.home.active-header .header-main{
+    background-color: #fff !important;
+}/*active header*/
 body.active-header .header-main {
     background-color: #fff !important;
     box-shadow: 5px 10px 26px rgb(0 0 0 / 7%);
