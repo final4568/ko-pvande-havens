@@ -51,6 +51,7 @@
 }
 .hs-main-wrpper .hs-slider .swiper-slide{
     height: auto;
+    min-height: 700px;
 }
 .hs-container .hs-content-wrapper .hs-title{
     color: #133A1B;
@@ -188,6 +189,7 @@
 }
 .fav-food-main-wrapper .dark-btn{
     margin-top: auto;
+    max-width: max-content;
 }
 .fav-Food-swiper .fav-slide-content-wrapper .title-price-wrapper{
     display: flex;
