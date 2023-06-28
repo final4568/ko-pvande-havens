@@ -174,6 +174,18 @@
 			prevEl: ".hs-arrow-controll-prev",
 		},
 	});
+	var swiper = new Swiper(".tabslider", {
+		slidesPerView: 3,
+		spaceBetween: 30,
+		loop: true,
+		autoplay: {
+			delay: 2000,
+		  },
+		pagination: {
+			el: " .swiper-pagination",
+			clickable: true,
+		}
+	});
 	
 	var swiper = new Swiper(".fav-Food-swiper", {
 		slidesPerView: 1,
