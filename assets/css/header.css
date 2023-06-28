@@ -8,7 +8,9 @@
 .desktop-menu .elementor-widget-container ul.elementor-nav-menu>li>.sub-menu li>a {
     border-left: 0 !important;
 }
-
+/* body:not(.home):not(.active-header) .desktop-menu .elementor-widget-container ul.elementor-nav-menu>li>a {
+    color: #fff !important;
+} */
 .desktop-menu .elementor-widget-container ul.elementor-nav-menu>li>.sub-menu li:hover>a {
     text-decoration: underline;
 }

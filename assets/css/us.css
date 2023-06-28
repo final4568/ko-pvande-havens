@@ -604,9 +604,20 @@ padding-bottom: 70%
     justify-content: center;
 }
 
+.jobs-page-section .elementor-container{
+    flex-wrap: wrap;
+}
+.jobs-page-section .elementor-container .elementor-column{
+    width: 33.33% !important;
+    margin-bottom: 30px;
+}
 
 
 @media screen and (max-width:1024px){
+    .jobs-page-section .elementor-container .elementor-column{
+       width: 50% !important;
+   }
+
     .hs-main-wrpper .hs-inner-wrapper{
         padding: 180px 20px 100px;
     }
@@ -653,6 +664,9 @@ padding-bottom: 70%
 }
 }
 @media screen and (max-width:767px){
+    .jobs-page-section .elementor-container .elementor-column{
+        width: 100% !important;
+    }
     .hs-controlls .hs-arrow-controll-prev,
     .hs-controlls .hs-arrow-controll-next{
         display: none;
