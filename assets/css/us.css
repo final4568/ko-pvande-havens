@@ -589,6 +589,22 @@ padding-bottom: 70%
     color: #011B10;
 }
 
+/* arrengement cta */
+
+.cta-50-wrapper .cta-50 .elementor-widget-container{
+    height: 100%
+}
+ .cta-50-wrapper .cta-50 .elementor-widget-container .elementor-cta{
+    height: 100%;
+    display: flex;
+}
+.cta-50-wrapper .cta-50 .elementor-widget-container .elementor-cta .elementor-cta__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 
 @media screen and (max-width:1024px){
     .hs-main-wrpper .hs-inner-wrapper{
@@ -623,6 +639,17 @@ padding-bottom: 70%
   .image-gallery-wrapper .elementor-image-gallery .gallery  .gallery-item{
     max-width: calc(50% - 30px) !important;
     margin: 0 15px 30px !important;
+}
+.cta-50-wrapper .cta-50 {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.cta-50-wrapper .cta-50 .elementor-cta{
+    flex-direction: revert !important;
+}
+.cta-50-wrapper .cta-50:nth-child(even) .elementor-cta{
+    flex-direction: row-reverse !important
 }
 }
 @media screen and (max-width:767px){

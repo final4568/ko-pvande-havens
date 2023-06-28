@@ -600,14 +600,13 @@ body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-but
     max-width: 100%;
 }
 
-
 body .text-link .elementor-button span.last,
 body .text-link.elementor-widget-call-to-action .elementor-cta__button-wrapper .elementor-cta__button span.last,
 body .text-link.elementor-cta--skin-classic .elementor-cta__button.elementor-button span.last,
 body .arrow-btn .elementor-button span.last{
 	display: inline-block;
 	position: relative;
-	text-transform: lowercase;
+	text-transform: capitalize;
 }
 
 body .text-link .elementor-button span.last:after,
