@@ -1,4 +1,9 @@
-
+.gtranslate_wrapper{
+    display: none
+}
+.header-translator .gtranslate_wrapper{
+    display: block
+}
 .header-serch-icon .elementor-widget-container{
     max-height: 20px;
     display: flex;
