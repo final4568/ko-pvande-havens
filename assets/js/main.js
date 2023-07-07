@@ -88,7 +88,7 @@
 			$("li.gf_readonly input").attr("readonly", "readonly");
 		});
 		//smoothscroll
-		$('a[href^= "#"]:not(.main-menu-nav .menu li a, .galler-tab-nav .elementor-icon-list-item a, .galler-tab-navigation .elementor-icon-list-item a  ):not(a[href="#"])').on('click', function (x) {
+		$('a[href^= "#"]:not(.main-menu-nav .menu li a, .galler-tab-nav .elementor-icon-list-item a, .galler-tab-navigation .elementor-icon-list-item a, .res-popup  ):not(a[href="#"])').on('click', function (x) {
 			x.stopImmediatePropagation();
 			x.preventDefault();
 			$(document).off("scroll");
@@ -328,7 +328,13 @@
 
 	  $(window).on('load resize', function () {
 		kovp_pagination();
-	});
+	  });
+	  $(window).on('load', function () {
+		
+		if($('body section').hasClass('reserver-page') === true){
+			$('.footer-reserver-btn').hide()
+		}
+	  });
 	  document.addEventListener('facetwp-loaded', function () {
 		if (FWP.loaded) {
 			$('.facetwp-facet-post_pagination').show();

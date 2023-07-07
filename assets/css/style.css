@@ -150,19 +150,19 @@ body p a:hover {
 }
 
 /* / =----------------------------UL/OL---------------------------- / */
-.site-main ul:not([class]) {
+ul:not([class]) {
 	font-size: inherit;
 	list-style: none;
 }
 
-.site-main ol {
+ol {
 	list-style: decimal outside;
 	font-size: inherit;
 	padding-left: 27px;
 }
 
-body .site-main ul:not([class]) li,
-body .site-main ul:not([class]) li ol li ul:not([class]) li {
+body ul:not([class]) li,
+body ul:not([class]) li ol li ul:not([class]) li {
 	font-size: inherit;
     line-height: 28px;
     font-family: inherit;
@@ -173,8 +173,8 @@ body .site-main ul:not([class]) li ol li ul:not([class]) li {
     position: relative;	
 }
 
-.site-main ol li,
-.site-main ul:not([class]) li ol li {
+ol li,
+ul:not([class]) li ol li {
 	font-size: inherit;
     line-height: 28px;
     font-family: inherit;
@@ -185,23 +185,23 @@ body .site-main ul:not([class]) li ol li ul:not([class]) li {
     position: relative;
 }
 
-.site-main ol ol,
-.site-main ul:not([class]) ul:not([class]),
-.site-main ol ul:not([class]),
-.site-main ul:not([class]) ol {
+ol ol,
+ul:not([class]) ul:not([class]),
+ol ul:not([class]),
+ul:not([class]) ol {
 	margin-bottom: 0;
 	margin-left: 0px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-.site-main ul:not([class]):not(.elementor-editor-element-settings):not(.elementor-select-preset-list):not(.gform_fields) {
+ul:not([class]):not(.elementor-editor-element-settings):not(.elementor-select-preset-list):not(.gform_fields) {
 	margin-left: 0;
 	padding-left: 0;
 }
 
-.site-main ul:not([class]):not(.elementor-editor-element-settings):not(.elementor-select-preset-list):not(.gform_fields):not(.camps_and_programs) li:before,
-.site-main ul:not([class]) li ol li ul:not([class]) li:after {
+ul:not([class]):not(.elementor-editor-element-settings):not(.elementor-select-preset-list):not(.gform_fields):not(.camps_and_programs) li:before,
+ul:not([class]) li ol li ul:not([class]) li:after {
 	content: "";
     display: inline-block;
     position: absolute;
@@ -213,13 +213,13 @@ body .site-main ul:not([class]) li ol li ul:not([class]) li {
     border-radius: 00%;
 }
 
-.site-main ol > li::marker, 
-.site-main ul:not([class]) li ol > li::marker{
+ol > li::marker, 
+ul:not([class]) li ol > li::marker{
     color:#017D12;
-	content: "0" counter(list-item)":";
+	content: "" counter(list-item)":";
 }
 
-.site-main ul:not([class]) ol li::before {
+ul:not([class]) ol li::before {
 	display: none !important;
 }
 
@@ -1579,7 +1579,7 @@ End gravity form style
 
 /* -------------------------- end code for cookies -------------------------- */
 
-body .site-main ol ul:not([class]) li, body .site-main ol ul:not([class]) li ol li ul:not([class]) li{
+body ol ul:not([class]) li, body ol ul:not([class]) li ol li ul:not([class]) li{
     margin-bottom: 15px;     
 }
 

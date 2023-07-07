@@ -548,14 +548,25 @@ padding-bottom: 70%
 .blogsingle-column {
     max-width: calc(100% - 330px);
 }
+.single-latest-post .elementor-post a:not(.elementor-post__thumbnail__link):hover{
+    text-decoration: underline
+}
 
 .single-latest-post .elementor-post .elementor-post__text {
     display: flex;
     justify-content: center
 }
+.single-latest-post .elementor-post .elementor-post__thumbnail__link{
+    max-height: 60px;
+    height: 100%
+}
+.single-latest-post .elementor-post .elementor-post__thumbnail__link img{
+    width: 100% !important;
+    object-fit: cover
+}
 
 .single-latest-post .elementor-post {
-    border-bottom: 1px solid #4a4f4b47;
+    /* border-bottom: 1px solid #4a4f4b47; */
     padding-bottom: 14px !important;
 }
 
@@ -611,8 +622,25 @@ padding-bottom: 70%
     width: 33.33% !important;
     margin-bottom: 30px;
 }
-
-
+.blog-icon .elementor-icon-box-wrapper .elementor-icon-box-title{
+    margin-top: 0
+}
+.blog-icon .elementor-icon-box-wrapper{
+    position: relative
+}
+.blog-icon .elementor-icon-box-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 30px);
+    border: 1px dashed green;
+    left: 32px;
+    top: 0;
+    z-index: -1
+}
+.blog-icons-wrapper .blog-icon:last-child .elementor-icon-box-wrapper::after{
+    display: none
+}
 @media screen and (max-width:1024px){
     .jobs-page-section .elementor-container .elementor-column{
        width: 50% !important;
@@ -664,6 +692,25 @@ padding-bottom: 70%
 }
 }
 @media screen and (max-width:767px){
+
+    .gtranslate_wrapper{
+        max-width: 41px
+    }
+    .gtranslate_wrapper .gt_switcher{
+        max-width: 41px;
+    }
+    .gtranslate_wrapper > .gt_switcher .gt_selected a{
+        width: 100% !important;
+        font-size: 0 !important
+    }
+    .gtranslate_wrapper .gt_switcher .gt_option{
+        right: 0
+    }
+
+
+    .blog-icon .elementor-icon-box-wrapper::after{
+        display: none;
+    }
     .jobs-page-section .elementor-container .elementor-column{
         width: 100% !important;
     }
@@ -762,6 +809,7 @@ padding-bottom: 70%
     .single-blog-content table {
         min-width: 600px;
     }
+    
 }
 
 @media screen and (max-width:580px){
@@ -792,4 +840,12 @@ padding-bottom: 70%
         max-width: 100% !important;
         margin: 0 0 30px !important
     }
+    .topbar-links ul li a{
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+        font-size: 11px !important;
+    }
 }
+
+
+

@@ -79,5 +79,12 @@
     .copyright-menu-list .elementor-widget-container{
         margin-bottom: -2px !important;
     }
+
+    .footer-reserver-btn a{
+        max-width: max-content !important;
+    }
+    .footer-reserver-btn a::after{
+        width: 0px !important
+    }
 }
 
