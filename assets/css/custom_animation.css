@@ -1,0 +1,279 @@
+div.wpb_animate_up>*{
+    opacity: 0;
+  }
+  .flipUp.imIn {
+    animation-name: flipUp;
+    -webkit-animation-name: flipUp;
+    -moz-animation-name: flipUp;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    -moz-animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -moz-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    visibility: visible !important;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes flipUp {
+    0% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes flipUp {
+    0% {
+      -webkit-transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .ae-1 {
+    -webkit-animation-delay: 200ms !important;
+    animation-delay: 200ms !important;
+  }
+  
+  .ae-2 {
+    -webkit-animation-delay: 250ms !important;
+    animation-delay: 250ms !important;
+  }
+  
+  .ae-3 {
+    -webkit-animation-delay: 440ms !important;
+    animation-delay: 440ms !important;
+  }
+  
+  .ae-4 {
+    -webkit-animation-delay: 600ms !important;
+    animation-delay: 600ms !important;
+  }
+  
+  .ae-5 {
+    -webkit-animation-delay: 760ms !important;
+    animation-delay: 760ms !important;
+  }
+  
+  .ae-6 {
+    -webkit-animation-delay: 940ms !important;
+    animation-delay: 940ms !important;
+  }
+  
+  .ae-7 {
+    -webkit-animation-delay: 1100ms !important;
+    animation-delay: 1100ms !important;
+  }
+  
+  .ae-8 {
+    -webkit-animation-delay: 1260ms !important;
+    animation-delay: 1260ms !important;
+  }
+  
+  .ae-9 {
+    -webkit-animation-delay: 1440ms !important;
+    animation-delay: 1440ms !important;
+  }
+  
+  .ae-10 {
+    -webkit-animation-delay: 1600ms !important;
+    animation-delay: 1600ms !important;
+  }
+  
+  .aos-delay-1 {
+    -webkit-transition-delay: 100ms;
+    transition-delay: 100ms;
+  }
+  
+  .aos-delay-2 {
+    -webkit-transition-delay: 180ms;
+    transition-delay: 180ms;
+  }
+  
+  .aos-delay-3 {
+    -webkit-transition-delay: 260ms;
+    transition-delay: 260ms;
+  }
+  
+  .aos-delay-4 {
+    -webkit-transition-delay: 340ms;
+    transition-delay: 340ms;
+  }
+  
+  .aos-delay-5 {
+    -webkit-transition-delay: 440ms;
+    transition-delay: 440ms;
+  }
+  
+  .aos-delay-6 {
+    -webkit-transition-delay: 520ms;
+    transition-delay: 520ms;
+  }
+  
+  .aos-delay-7 {
+    -webkit-transition-delay: 600ms;
+    transition-delay: 600ms;
+  }
+  
+  .aos-delay-8 {
+    -webkit-transition-delay: 660ms;
+    transition-delay: 660ms;
+  }
+  
+  .aos-delay-9 {
+    -webkit-transition-delay: 720ms;
+    transition-delay: 720ms;
+  }
+  
+  .aos-delay-10 {
+    -webkit-transition-delay: 800ms;
+    transition-delay: 800ms;
+  }
+  
+  /*--------------------------------------------------*/
+  /*---------------------  Filp Down  ----------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  
+  div.wpb_flip_down>*{
+    opacity: 0;
+  }
+  .flipdown.imIns {
+    animation-name: flipdown;
+    -webkit-animation-name: flipdown;
+    -moz-animation-name: flipdown;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    -moz-animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -moz-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    visibility: visible !important;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes flipdown {
+    0% {
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes flipdown {
+    0% {
+      -webkit-transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /*--------------------------------------------------*/
+  /*---------------------  Left To Right   ----------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  div.wpb_animate_leftright>*{
+    opacity: 0;
+  }
+  .leftright.imIn {
+    animation-name: leftright;
+    -webkit-animation-name: leftright;
+    -moz-animation-name: leftright;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    -moz-animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -moz-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    visibility: visible !important;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes leftright {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes leftright {
+    0% {
+      -webkit-transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /*--------------------------------------------------*/
+  /*---------------------  Right To Left  ----------------*/
+  /*--------------------------------------------------*/
+  /*--------------------------------------------------*/
+  div.wpb_animate_rightleft>*{
+    opacity: 0;
+  }
+  .rightleft.imIn {
+    animation-name: rightleft;
+    -webkit-animation-name: rightleft;
+    -moz-animation-name: rightleft;
+    animation-duration: 800ms;
+    -webkit-animation-duration: 800ms;
+    -moz-animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    -moz-animation-timing-function: cubic-bezier(0.25, 0.1, 0.2, 1);
+    visibility: visible !important;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes rightleft {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes rightleft {
+    0% {
+      -webkit-transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      opacity: 1;
+    }
+  }

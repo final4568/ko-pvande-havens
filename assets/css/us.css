@@ -346,6 +346,9 @@ padding-bottom: 70%
     color: #017D12 !important
 }
 /*blogs post*/
+.blog-single-hero{
+    background-size: cover !important
+}
 .blog-post-wrapper{
     display: flex;
     flex-wrap: wrap;
