@@ -314,10 +314,14 @@ padding-bottom: 70%
     justify-content: flex-start
 }
 .testimonials-main .elementor-swiper .swiper-slide .elementor-testimonial{
-     position: relative;
-     padding: 100px 30px 40px 30px;
-     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
-     height: 100%
+    position: relative;
+    padding: 100px 30px 40px 30px;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 .testimonials-main .elementor-swiper .swiper-slide .elementor-testimonial::after{
     content: '';
